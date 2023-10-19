@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+img{
+    width: 500px;
+    height: 333px;
+    border: 0.1em;
+    border-style: solid;
+    border-color: black;
+}
+
+.image1{
+    filter: grayscale(75%);
+}
+
+.image2{
+    border-radius: 50px;
+}
+
+.image3{
+    filter:sepia(75%)
+}
+
+.image4{
+    filter: invert(75%);
+}
+
+iframe{
+    width: 500px;
+    height: 333px;
+    border: 0.1em;
+    border-style: solid;
+    border-color: black;
+}
