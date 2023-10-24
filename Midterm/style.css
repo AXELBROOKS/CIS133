@@ -43,7 +43,7 @@
     color: white;
 }
 
-.nav ul{
+ul{
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -81,6 +81,10 @@
     color: rgba(255, 255, 255, 0.75);
 }
 
+.footer a{
+    color: rgba(255, 255, 255, 0.75);
+}
+
 .map{
     position: fixed;
     top: 175px;
@@ -98,3 +102,4 @@
     padding: 3px;
 
 }
+
