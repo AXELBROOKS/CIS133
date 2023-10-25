@@ -8,6 +8,8 @@
                             "header header header"
                             "nav main aside"
                             "footer footer footer";
+
+    background-color: rgb(230, 200, 165);
 }
 
 .header{
@@ -58,6 +60,13 @@ ul{
     font-size: 14pt;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+main img{
+    position: fixed;
+    height: 28%;
+    top: 400px;
+    left: 350px;
 }
 
 .main h1{
@@ -115,4 +124,12 @@ ul{
     font-size: 24px;
     left: 600px;
     top: 500px;
+}
+
+.aside img{
+    padding: 5px;
+}
+
+.image2{
+    height: 75%;
 }
