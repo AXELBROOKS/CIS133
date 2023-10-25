@@ -1,4 +1,11 @@
 body {
+    display:grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 75px 1fr 50px;
+    grid-template-areas: 
+                        "hdr hdr"
+                        "aside main"
+                        "ftr ftr";
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
@@ -10,18 +17,22 @@ header, aside, main, footer {
 }
 
 header {
+    grid-area: hdr;
     color: white;
     background-color: rgb(33,87,51);
 }
 
 aside {
+    grid-area: aside;
     background-color: rgb(75,133,94);
 }
 
 main {
+    grid-area: main;
 }
 
 footer {
+    grid-area: ftr;
     color: white;
     background-color: rgb(53,112,72);
 }
@@ -40,4 +51,30 @@ p {
     font-style: italic;
     padding: 5px;
     border-radius: 3px;
+}
+
+header{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+footer div{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
