@@ -52,8 +52,8 @@ footer {
 }
 
 header, footer {
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
