@@ -9,7 +9,7 @@
                             "nav main aside"
                             "footer footer footer";
 
-    background-color: rgb(230, 200, 165);
+    background-color: rgb(210, 239, 247);
 }
 
 .header{
@@ -65,13 +65,23 @@ ul{
 main img{
     position: fixed;
     height: 28%;
-    top: 400px;
+    top: 375px;
     left: 350px;
 }
 
 .main h1{
     font-size: 36px;
     color: coral;
+}
+
+.maincontact{
+    text-align: center;
+    justify-content: center;
+}
+
+.maincontact h1{
+    color: coral;
+    
 }
 
 .aside{
@@ -101,9 +111,12 @@ main img{
 }
 
 .main li{
-    font-size: 30px;
+    font-size: 55px;
     list-style:square url(images/bone.svg);
-    padding: 10px;
+}
+
+li span{
+    font-size: 30px;
 }
 
 .aside li{
@@ -133,3 +146,15 @@ main img{
 .image2{
     height: 75%;
 }
+
+.maincredits{
+    font-size: 12px;
+    margin-left: 50px;
+}
+
+.maincredits h1{
+    color: coral;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
