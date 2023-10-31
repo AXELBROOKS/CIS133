@@ -81,14 +81,7 @@ p {
     height: 180px;
 }
 
-header div{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-footer div{
+header footer div{
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 0px;

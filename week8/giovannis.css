@@ -1,5 +1,5 @@
 body {
-    display:grid;
+    display: grid;
     grid-template-columns: 15% auto;
     grid-template-rows: 75px 1fr 50px;
     grid-template-areas: 
@@ -59,14 +59,7 @@ header, footer {
     align-items: center;
     }
 
-header div{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-footer div{
+header footer div{
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 0px;
