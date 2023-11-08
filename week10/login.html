@@ -6,26 +6,32 @@
     <title>Login</title>
 
     <style>
-        body{
-            display:flex;
-            justify-content: center;
-            align-items: center;
+
+        
+        #reset {
+            width: 100%;
+        }
+
+        #submit {
+            width: 100%;
         }
     </style>
 
 </head>
 
 <body>
-    <table>
-        <form>
-            <tr colspan="2">
-                <td>
-                    <input type="text" name="username" id="username" autofocus maxlength="20" required tabindex="1" placeholder="Type your username">
+    <form>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <input type="text" name="username" id="username" autofocus maxlength="20" required tabindex="1"
+                        placeholder="Type your username">
                 </td>
             </tr>
-            <tr colspan="2">
-                <td>
-                    <input type="password" name="password" id="password" maxlength="20" required tabindex="2" placeholder="Type your password">
+            <tr>
+                <td colspan="2">
+                    <input type="password" name="password" id="password" maxlength="20" required tabindex="2"
+                        placeholder="Type your password">
                 </td>
             </tr>
             <tr>
@@ -36,9 +42,8 @@
                     <input type="submit" name="submit" id="submit">
                 </td>
             </tr>
-
-        </form>
-    </table>
+        </table>
+    </form>
 </body>
 
 </html>
