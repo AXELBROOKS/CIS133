@@ -7,26 +7,27 @@
 
     <style>
         form {
-            display: block;
+            width: 1vw;
         }
 
         img {
             height: 200px;
             width: 200px;
         }
+        
+        
     </style>
-
 </head>
 
 <body>
     <form>
         <table>
             <tr>
-                <td>
+                <td rowspan="5">
                     <img src="images/Tshirt.jpg" alt="black shirt with custom logo">
                 </td>
-                <td>
-                    <h1>Custom Logo Shirt</h1>
+                <td style="font-size: 1em; font-weight: bold; font-style: italic;">
+                    Custom Logo Shirt
                 </td>
             </tr>
             <tr>
@@ -39,8 +40,7 @@
                         <option>Blue</option>
                         <option>Green</option>
                     </select>
-                </td>
-                <td>
+               
                     Quantity: <input type="text" size="1" required>
                 </td>
             </tr>
@@ -68,46 +68,43 @@
         <table>
             <tr>
                 <td>
-                    <input type="text" name="fname" id="fname" placeholder="First Name" style="width:50%" tabindex="1">
+                    <input type="text" name="fname" id="fname" placeholder="First Name" tabindex="1">
                 </td>
                 <td>
-                    <input type="text" name="lname" id="lname" placeholder="Last Name" style="width: 50%" tabindex="2">
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" tabindex="2">
                 </td>
             </tr>
-            <tr colspan="2">
-                <td>
-                    <input type="text" name="address" id="address" placeholder="Street Address" style="width: 100%"
-                        tabindex="3">
+            <tr>
+                <td colspan="3">
+                    <input type="text" name="address" id="address" placeholder="Street Address" tabindex="3">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="text" name="city" id="city" placeholder="City" style="width: 33%" tabindex="4">
-                </td>
-                <td>
-                    <input type="text" name="state" id="state" placeholder="State" style="width: 33%" tabindex="5">
-                </td>
-                <td>
-                    <input type="text" name="zip" id="zip" placeholder="ZIP Code" style="width: 33%" tabindex="6">
+                    <input type="text" name="city" id="city" placeholder="City" tabindex="4">
+            
+                    <input type="text" name="state" id="state" placeholder="State" tabindex="5">
+               
+                    <input type="text" name="zip" id="zip" placeholder="ZIP Code" tabindex="6">
                 </td>
             </tr>
             <tr>
-                <td>
+                <td colspan="3">
                     <input type="email" name="email" id="email" placeholder="Email Address" tabindex="7">
                 </td>
             </tr>
             <tr>
-                <td>
+                <td colspan="3">
                     <input type="tel" name="phone" id="phone" placeholder="Phone Number" tabindex="8">
                 </td>
             </tr>
             <tr>
-                <td>
+                <td colspan="2">
                     Best Delivery Date: <input type="date" name="deldate" id="deldate" tabindex="9">
                 </td>
             </tr>
             <tr>
-                <td>
+                <td colspan="2">
                     <textarea name="speinstru" id="speinstru" cols="20" rows="3">Special Instructions</textarea>
                 </td>
             </tr>

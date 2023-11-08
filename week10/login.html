@@ -7,6 +7,12 @@
 
     <style>
 
+      table{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 250px;
+      }
+
         #reset {
             width: 100%;
         }
@@ -19,30 +25,31 @@
 </head>
 
 <body>
-    <form class="form1">
-        <table>
-            <tr>
-                <td colspan="2">
-                    <input type="text" name="username" id="username" autofocus maxlength="20" required tabindex="1"
-                        placeholder="Type your username">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="password" name="password" id="password" maxlength="20" required tabindex="2"
-                        placeholder="Type your password">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="reset" name="reset" id="reset">
-                </td>
-                <td>
-                    <input type="submit" name="submit" id="submit">
-                </td>
-            </tr>
-        </table>
-    </form>
+        <form>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="username" id="username" autofocus maxlength="20" required tabindex="1"
+                            placeholder="Type your username">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="password" name="password" id="password" maxlength="20" required tabindex="2"
+                            placeholder="Type your password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="reset" name="reset" id="reset">
+                    </td>
+                    <td>
+                        <input type="submit" name="submit" id="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
 
 </html>
