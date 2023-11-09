@@ -14,8 +14,57 @@
             height: 200px;
             width: 200px;
         }
+
+        hr{
+            width: 425px;
+        }
+
+        #fname{
+            width: 195px;
+        }
         
+        #lname{
+            width: 220px;
+        }
         
+        #address{
+            width: 425px;
+        }
+
+        #city{
+            width: 195px;
+        }
+
+        #state{
+            width: 95px;
+        }
+
+        #zip{
+            width: 112px;
+        }
+
+        #email{
+            width: 425px;
+        }
+
+        #phone{
+            width: 425px;
+        }
+
+        #deldate{
+            width: 300px;
+        }
+
+        #speinstru{
+            width: 425px;
+        }
+
+        #submit{
+            width: 100px;
+            position: relative;
+            left: 330px;
+        }
+
     </style>
 </head>
 
@@ -61,10 +110,8 @@
                     <input type="file" name="filechooser" id="filechooser">
                 </td>
             </tr>
-        </table>
-    </form>
+        </table><br>
     <hr>
-    <form>
         <table>
             <tr>
                 <td>
@@ -80,11 +127,9 @@
                 </td>
             </tr>
             <tr>
-                <td>
+                <td colspan="3">
                     <input type="text" name="city" id="city" placeholder="City" tabindex="4">
-            
                     <input type="text" name="state" id="state" placeholder="State" tabindex="5">
-               
                     <input type="text" name="zip" id="zip" placeholder="ZIP Code" tabindex="6">
                 </td>
             </tr>
@@ -99,12 +144,12 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
-                    Best Delivery Date: <input type="date" name="deldate" id="deldate" tabindex="9">
+                <td colspan="3">
+                    Best Delivery Date:<input type="date" name="deldate" id="deldate" tabindex="9">
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
+                <td colspan="3">
                     <textarea name="speinstru" id="speinstru" cols="20" rows="3">Special Instructions</textarea>
                 </td>
             </tr>
