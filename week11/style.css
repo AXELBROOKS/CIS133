@@ -1,0 +1,40 @@
+body{
+   background-color: tan;
+}
+
+
+#Review{
+   border-collapse: collapse;
+   margin-left: auto;
+   margin-right: auto;
+   border-color: darkgreen;
+}
+
+#Review thead{
+   font-size: 1.2em;
+   font-weight: bolder;
+   background-color: green;
+   color: white;
+}
+
+#Review tbody tr:nth-child(odd){
+   background-color: lightgreen;
+}
+
+#Review tbody tr:nth-child(even){
+   background-color: white;
+}
+
+#Review tfoot{
+   background-color: green;
+   color: white;
+}
+   
+
+#Web_Allowed{
+   text-align: center;
+}
+
+#PHP{
+   text-align: center;
+}
