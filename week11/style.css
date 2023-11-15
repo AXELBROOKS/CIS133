@@ -2,6 +2,9 @@ body{
    background-color: tan;
 }
 
+h1{
+   color: darkred;
+}
 
 #Review{
    border-collapse: collapse;
@@ -27,6 +30,10 @@ body{
 
 #Review tfoot{
    background-color: green;
+   color: white;
+}
+
+p{
    color: white;
 }
    
