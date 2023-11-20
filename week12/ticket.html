@@ -51,9 +51,9 @@
     <ticket>
         <ownerInfo>
             <p>Sr. Amigo's Name</p>
-            <p><span class="boldText" id="ownerName">???</span></p>
+            <p><span class="boldText" id="ownerName" onclick="Name()">???</span></p>
             <p>Date of Visit</p>
-            <p><span class="boldText" id="visitDate">??/??/????</span></p>
+            <p><span class="boldText" id="visitDate" onclick="VDate()">??/??/????</span></p>
         </ownerInfo>
 
         <amigoInfo>
@@ -62,5 +62,20 @@
             <p><span class="boldText" id="amigoName">???</span></p>
         </amigoInfo>
     </ticket>
+
+    <script>
+        function Name(){
+            let StrName = window.prompt("What is your name?")
+            document.getElementById("ownerName").innerText = StrName;
+        }
+
+        function VDate(){
+            let StrDate = window.prompt("What is the date of your visit?")
+            document.getElementById("visitDate").innerText = StrDate;
+            
+        }
+
+    </script>
+
 </body>
 </html>

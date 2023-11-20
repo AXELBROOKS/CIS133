@@ -38,10 +38,24 @@
     <div id="celebrity">Mark Rober</div>
     <table>
         <tr>
-            <td><button>Change Title</button></td>
-            <td><button>Change Name</button></td>
-            <td><button>Change Color</button></td>
+            <td><button onclick="ChangeTitle()">Change Title</button></td>
+            <td><button onclick="ChangeName()">Change Name</button></td>
+            <td><button onclick="ChanceColor()">Change Color</button></td>
         </tr>
     </table>
 </body>
+<script>
+    function ChangeTitle(){
+        let StrTitle = window.prompt ("What do you want the title to be?");
+        document.title = StrTitle;
+    }
+    function ChangeName(){
+        let StrName = window.prompt ("Who is your favorite celebrity?");
+        document.getElementById("celebrity").innerText=StrName;
+    }
+    function ChanceColor(){
+        let StrColor = window.prompt("What color do you want the background to be?");
+        document.body.style.background = StrColor;
+    }
+</script>
 </html>
