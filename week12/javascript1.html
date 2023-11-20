@@ -40,7 +40,7 @@
         <tr>
             <td><button onclick="ChangeTitle()">Change Title</button></td>
             <td><button onclick="ChangeName()">Change Name</button></td>
-            <td><button onclick="ChanceColor()">Change Color</button></td>
+            <td><button onclick="ChangeColor()">Change Color</button></td>
         </tr>
     </table>
 </body>
@@ -53,7 +53,7 @@
         let StrName = window.prompt ("Who is your favorite celebrity?");
         document.getElementById("celebrity").innerText=StrName;
     }
-    function ChanceColor(){
+    function ChangeColor(){
         let StrColor = window.prompt("What color do you want the background to be?");
         document.body.style.background = StrColor;
     }
