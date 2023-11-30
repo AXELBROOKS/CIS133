@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +24,7 @@
             <tr>
                 <td>Amigo Type</td>
                 <td>
-                    <select name="amigo_type" id="amigo_type" style="width:100%">
+                    <select name="amigo_type" id="amigo_type" style="width:100%" onchange="recordType" ()>
                         <option>Select One</option>
                         <option value="dog">Dog</option>
                         <option value="cat">Cat</option>
@@ -40,9 +41,9 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align:right;"">
+                <td colspan="2" style="text-align:right;">
                     <input type="button" value="Cancel" onclick="cancelTicket()" />
-                    <input type="button" value="Print Ticket" onclick="printTicket()" />
+                <input type="button" value="Print Ticket" onclick="printTicket()" />
                 </td>
             </tr>
         </table>
@@ -76,13 +77,38 @@
         window.close();
     }
 
-    let amigoName = document.getElementById("amigo_name")
-    document.getElementById("amigo_name")=amigoName
+    var amigoName = document.getElementbyId("amigo_name");
 
-    let amigoType = document.getElementById("amigo_type")
-    document.getElementById("amigo_type")=amigoType
+    var amigoType;
+    function recordType() {
+        amigoType = document.getElementById("amigo_type").value;
+    }
 
-    
+    var amigoSize;
+
+    for (i = 0; i <= (document.form.amigo_size.length); i++) {
+        if (document.getElementById('Small').checked) {
+            amigoSize == "Small"
+        }
+        else if (document.getElementById('Medium').checked) {
+            amigoSize == "Medium"
+        }
+        else if (document.getElementById('Large').checked) {
+            amigoSize == "Large"
+        }
+    }
+
+    document.getElementById("boldText").innerText = amigoName;
+
+    document.img.src = `${amigoType}`-`${amigoSize}`.jpg;
+
+    document.img.style.height="150px";
+    document.form.style.display="none";
+
+    function printTicket() {
+        window.print;
+    }
+
 
 </script>
 
