@@ -78,36 +78,33 @@
     }
 
     function printTicket() {
+
         var amigoName = document.getElementbyId("amigo_name").value;
 
         var amigoType = document.getElementById("amigo_type").value;
-        var option = amigoType.options[amigoType.selectedIndex];
 
-        var amigoSize = document.getElementsByName("amigo_size").value;
+        var amigoSizeOptions = document.getElementsByName("amigo_size");
 
-        for (i = 0; i <= (document.amigo_size.length); i++) {
-            if (document.getElementById('Small').checked) {
-                amigoSize.value == "Small"
-            }
-            else if (document.getElementById('Medium').checked) {
-                amigoSize.value == "Medium"
-            }
-            else if (document.getElementById('Large').checked) {
-                amigoSize.value == "Large"
+        var amigoSize;
+
+        for (var i = 0; i < amigoSizeOptions.length; i++) {
+            if (amigoSizeOptions[i].checked) {
+                amigoSize = amigoSizeOptions[i].value;
+                break;
             }
         }
 
         document.getElementById("amigoName").innerText = amigoName;
 
-        document.img.src = `${amigoType}`-`${amigoSize}`.jpg;
+        var imgSrc = `./images/${amigoType}-${amigoSize}.jpg`;
+        document.getElementById("amigoPicture").src = imgSrc;
 
-        document.img.style.height = "150px";
-        document.form.style.display = "none";
+        document.getElementbyId("amigoPicture").style.height = '150px';
 
+        document.getElementById("form").style.display = 'none';
 
+        alert("Your ticket is ready to be printed");
     }
 
-
 </script>
-
 </html>
