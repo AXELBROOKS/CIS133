@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Skateopedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="wrapper">
+
+    <header class="header">
+        <img id="headimg" src="./images/SoP Header.png" alt="blue and black band">
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History of Figure Skating</a></li>
+            <li><a href="terms.html">Key Terms</a></li>
+            <li><a href="scoring.html">IJS Scoring System</a></li>
+            <li><a href="newsletter.html">Join our Newsletter</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="main">
+        <p id="words">Skateopedia</p>
+        <p id="wiki">A division of Wikipedia</p>
+        <input type="text" id="txtlookfor" name="searchbox" placeholder="Type here to search" size="50px">
+        <input type="submit" id="srchbtn" name="srchbtn" value="Search" onclick="search()">
+        
+        <a id="loginbtn" href="login.html">Login</a>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright&copy; 2023 SkateCentral Media</p>
+        <p>Last updated 12/7/2023</p>
+        <p><a id="contact" href="mailto:skatecentral@gmail.com">skatecentral@gmail.com</a></p>
+    </footer>
+</body>
+
+<script>
+    function search() {
+        var site = "skateopedia.org";
+        var lookfor = document.getElementById("txtlookfor").value;
+        if (lookfor.length > 0) {
+            var query = "http://www.google.com/search?q=" + encodeURIComponent(lookfor) + " site:" + site;
+            location.href = query;
+        }
+        else {
+            alert("Please type the word or phrase that you would like to search for.");
+        }
+    }
+</script>
+
+</html>

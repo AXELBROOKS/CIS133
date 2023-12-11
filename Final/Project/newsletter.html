@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Skateopedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="wrapper">
+
+    <header class="header">
+        <img id="headimg" src="./images/SoP Header.png" alt="blue and black band">
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History of Figure Skating</a></li>
+            <li><a href="terms.html">Key Terms</a></li>
+            <li><a href="scoring.html">IJS Scoring System</a></li>
+            <li><a href="newsletter.html">Join our Newsletter</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="main">
+        
+        <form>
+            <table>
+                <tr>
+                    <td colspan="3">
+                        <input type="text" id="fnamebox" name="fnamebox" placeholder="First Name" tabindex="1">
+                        <input type="text" id="lnamebox" name="lnamebox" placeholder="Last Name" tabindex="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="text" id="emailbox" name="emailbox" placeholder="Email Address" tabindex="3">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="text" id="address box" name="addressbox" placeholder="Address" tabindex="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="citybox" name="citybox" placeholder="City" tabindex="5"></td>
+                    <td><input type="text" id="statebox" name="statebox" placeholder="State" tabindex="6"></td>
+                    <td><input type="text" id="zipbox" name="zipbox" placeholder="ZIP Code" tabindex="7"></td>
+                </tr>
+                <tr>
+                    <td>Type:<input type="radio" name="radiogroup" id="print" value="Print" checked>Print
+                        <input type="radio" name="radiogroup" id="Email" value="Email">Email
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" id="submit" name="submit" onclick="nlSubmit()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+
+    </main>
+
+    <footer class="footer">
+        <p>Copyright&copy; 2023 SkateCentral Media</p>
+        <p>Last updated 12/7/2023</p>
+        <p><a id="contact" href="mailto:skatecentral@gmail.com">skatecentral@gmail.com</a></p>
+    </footer>
+</body>
+
+<script>
+    var fname= document.getElementsById("fnamebox").value;
+    var lname= document.getElementById("lnamebox").value;
+    var mtype= document.getElementsByName("radiogroup").value;
+
+   function nlSubmit(){
+        if (fnamebox.length >0){
+        alert(`${fname} ${lname} has been added to the mailing list`)
+   } 
+   else {
+    alert("Please fill out the form below before submitting.")
+   }
+}
+</script>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Skateopedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="wrapper">
+
+    <header class="header">
+        <img id="headimg" src="./images/SoP Header.png" alt="blue and black band">
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History of Figure Skating</a></li>
+            <li><a href="terms.html">Key Terms</a></li>
+            <li><a href="scoring.html">IJS Scoring System</a></li>
+            <li><a href="newsletter.html">Join our Newsletter</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="main">
+        <input type="text" id="username" name="username" placeholder="Username" size="50px" tabindex="1">
+        <input type="password" id="password" name="password" placeholder="Password" size="50px" tabindex="2">
+        <input type="submit" id="login" name="login" value="Login" size="10px" tabindex="3" onclick="login()">
+    </main>
+
+    <footer class="footer">
+        <p>Copyright&copy; 2023 SkateCentral Media</p>
+        <p>Last updated 12/7/2023</p>
+        <p><a id="contact" href="mailto:skatecentral@gmail.com">skatecentral@gmail.com</a></p>
+    </footer>
+</body>
+
+<script>
+
+    var uname= document.getElementsById("username").value
+
+    function login(){
+        alert(`${uname} has been logged in.`)
+    }
+</script>
+
+</html>
