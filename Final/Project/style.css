@@ -1,234 +1,340 @@
 @charset "UTF-8";
 
+@supports(display: grid) {
 
-@media(min-width:900px) {
+    @media(min-width:900px) {
 
-    /*Universal Styling*/
+        /*Universal Styling*/
 
-    #wrapper {
-        display: grid;
-        grid-template-columns: 250px 1fr 15%;
-        grid-template-rows: 100px, auto, 25px;
-        grid-template-areas:
-            "header header header"
-            "nav main aside"
-            "footer footer footer";
-        background-image: url(./images/blue_background.png);
-        background-repeat: no-repeat;
-        background-size: 1510px;
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #wrapper {
+            display: grid;
+            grid-template-columns: 250px 1fr 15%;
+            grid-template-rows: 100px, auto, 25px;
+            grid-template-areas:
+                "header header header"
+                "nav main aside"
+                "footer footer footer";
+            background-image: url(./images/blue_background.png);
+            background-repeat: no-repeat;
+            background-size: 1510px;
+        }
+
+        .header {
+            grid-area: header;
+
+        }
+
+        .nav {
+            grid-area: nav;
+            background-color: silver;
+        }
+
+        .nav a {
+            text-decoration: none;
+        }
+
+        .nav ul {
+            padding-bottom: 245px;
+        }
+
+        .nav li {
+            padding-bottom: 25px;
+            list-style-type: none;
+        }
+
+        .nav a:hover {
+            background-color: rgb(35, 4, 159);
+            color: white;
+        }
+
+        .main {
+            grid-area: main;
+            padding-left: 15px;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: black;
+            width: 1500px;
+            text-align: center;
+            color: silver;
+        }
+
+        #contact {
+            color: silver;
+        }
+
+        /*Homepage Styling*/
+
+        #headimg {
+            width: 1500px;
+        }
+
+        #words {
+            font-size: 3em;
+            color: white;
+            position: relative;
+            left: 425px;
+            top: 100px;
+        }
+
+        #wiki {
+            color: white;
+            position: relative;
+            left: 475px;
+            top: 50px;
+        }
+
+        #txtlookfor {
+            position: relative;
+            left: 350px;
+            top: 50px;
+        }
+
+        #srchbtn {
+            position: relative;
+            left: 350px;
+            top: 50px;
+        }
+
+        #loginbtn {
+            color: silver;
+            position: relative;
+            top: -175px;
+            left: 700px;
+        }
+
+        /*Login Page Styling*/
+
+        #loginheader {
+            color: white;
+            position: relative;
+            top: 75px;
+            left: 325px;
+        }
+
+        #username {
+            position: relative;
+            top: 100px;
+            left: 300px;
+        }
+
+        #password {
+            position: relative;
+            top: 125px;
+            left: -52px;
+        }
+
+        #login {
+            position: relative;
+            top: 175px;
+            left: -125px;
+        }
+
+        /* History Styling*/
+
+        #historyTitle {
+            color: white;
+        }
+
+        #history1 {
+            color: white;
+            text-wrap: wrap;
+        }
+
+        #history2 {
+            color: white;
+            text-wrap: wrap;
+        }
+
+        #history3 {
+            color: white;
+            text-wrap: wrap;
+        }
+
+        #history4 {
+            color: white;
+            text-wrap: wrap;
+        }
+
+        #earlyskate{
+            position: relative;
+            padding-left: 10px;
+            top: 50px;
+        }
+
+        /*Key Terms Styling*/
+
+        #termsheader{
+            color: white;
+        }
+
+        #termsinstr{
+            color: whitesmoke;
+        }
+
+        details{
+            color: white;
+            font-weight: bold;
+        }
+
+        summary{
+            color: silver;
+        }
+
+
+        /*IJS Scoring Styling*/
+
+        #scoringTitle {
+            text-align: center;
+            color: white;
+        }
+
+        #scoringText {
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        #scores {
+            position: relative;
+            left: 360px;
+            color: white;
+            border-color: silver;
+        }
+
+        /*Newsletter Styling*/
+
+        #nlheader {
+            color: white;
+            position: relative;
+            left: 350px;
+            top: 75px;
+        }
+
+        #nlpara {
+            color: white;
+            position: relative;
+            left: 150px;
+            top: 70px;
+        }
+
+
+        form {
+            position: relative;
+            top: 100px;
+            left: 300px;
+        }
+
+        form td {
+            color: white;
+        }
+
+        #fnamebox {
+            width: 200px;
+        }
+
+        #emailbox {
+            width: 375px;
+        }
+
+        #addressbox {
+            width: 375px;
+        }
+
+        #citybox {
+            width: 150px;
+        }
+
+        #statebox {
+            width: 100px;
+        }
+
+        #zipbox {
+            width: 100px;
+        }
+
+        #submit {
+            position: relative;
+            left: 325px;
+        }
+
     }
 
-    .header {
-        grid-area: header;
+    @media(max-width:899px) {
 
-    }
+        #wrapper {
+            background-image: url(./images/blue_background.png);
+            background-repeat: no-repeat;
+            background-size: 820px;
+        }
 
-    .nav {
-        grid-area: nav;
-        background-color: silver;
-    }
+        nav ul {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0;
+            padding-inline: 2.4em;
+            background-color: silver;
+            color: rgb(35, 4, 159);
+        }
 
-    .nav a {
-        text-decoration: none;
-    }
+        nav a {
+            text-decoration: none;
+        }
 
-    .nav ul {
-        padding-bottom: 245px;
-    }
+        nav li {
+            border: none;
+            width: 18em;
+            list-style-type: none;
+        }
 
-    .nav li {
-        padding-bottom: 25px;
-        list-style-type: none;
-    }
+        #loginbtn {
+            color: silver;
+            position: relative;
+            top: -100px;
+            left: 135px;
+        }
 
-    .nav a:hover {
-        background-color: rgb(35, 4, 159);
-        color: white;
-    }
+        #words {
+            color: white;
+            position: relative;
+            left: 275px;
+            font-size: 1.5em;
 
-    .main {
-        grid-area: main;
-        padding-left: 15px;
-    }
+        }
 
-    .aside {
-        grid-area: aside;
-    }
+        #wiki {
+            color: white;
+            position: relative;
+            left: 250px;
+        }
 
-    .footer {
-        grid-area: footer;
-        background-color: black;
-        width: 1500px;
-        text-align: center;
-        color: silver;
-    }
+        #txtlookfor {
+            position: relative;
+            left: 125px;
+        }
 
-    #contact {
-        color: silver;
-    }
+        #srchbtn {
+            position: relative;
+            left: 125px;
+        }
 
-    /*Homepage Styling*/
-
-    #headimg {
-        width: 1500px;
-    }
-
-    #words {
-        font-size: 3em;
-        color: white;
-        position: relative;
-        left: 425px;
-        top: 100px;
-    }
-
-    #wiki {
-        color: white;
-        position: relative;
-        left: 475px;
-        top: 50px;
-    }
-
-    #txtlookfor {
-        position: relative;
-        left: 350px;
-        top: 50px;
-    }
-
-    #srchbtn {
-        position: relative;
-        left: 350px;
-        top: 50px;
-    }
-
-    #loginbtn {
-        color: silver;
-        position: relative;
-        top: -175px;
-        left: 700px;
-    }
-
-    /*Login Page Styling*/
-
-    #username {
-        position: relative;
-        top: 150px;
-        left: 300px;
-    }
-
-    #password {
-        position: relative;
-        top: 175px;
-        left: -75px;
-    }
-
-    #login {
-        position: relative;
-        top: 200px;
-        left: -125px;
-    }
-
-    /* History Styling*/
-
-    #historyTitle {
-        color: white;
-    }
-
-    #history1 {
-        color: white
-    }
-
-    #history2 {
-        color: white;
-    }
-
-    #history3 {
-        color: white;
-    }
-
-    #history4 {
-        color: white;
-    }
-
-    /*Key Terms Styling*/
-
-    /*IJS Scoring Styling*/
-
-    #scoringTitle {
-        text-align: center;
-        color: white;
-    }
-
-    #scoringText {
-        padding-left: 10px;
-        padding-right: 10px;
-        text-align: center;
-        color: white;
-    }
-
-    #scores{
-       position: relative;
-       left: 360px;
-       color: white;
-       border-color: silver;
-    }
-
-    /*Newsletter Styling*/
-
-    form {
-        position: relative;
-        top: 150px;
-        left: 300px;
-    }
-
-    form td {
-        color: white;
-    }
-
-}
-
-@media(max-width:899px) {
-
-    #wrapper {
-        background-image: url(./images/blue_background.png);
-        background-repeat: no-repeat;
-        background-size: 820px;
-    }
-
-    nav ul {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 0;
-        padding-inline: 2.4em;
-        background-color: silver;
-        color: rgb(35, 4, 159);
-    }
-
-    nav a {
-        text-decoration: none;
-    }
-
-    nav li {
-        border: none;
-        width: 14.4em;
-        list-style-type: none;
-    }
-
-    #words {
-        color: white;
-
-    }
-
-    #wiki {
-        color: white;
-    }
-
-    .footer {
-        position: relative;
-        top: 200px;
-        background-color: black;
-        color: silver;
-        size: 820px
+        .footer {
+            position: relative;
+            top: 175px;
+            background-color: black;
+            color: silver;
+            size: 820px
+        }
     }
 }
