@@ -6,9 +6,10 @@
 
         /*Universal Styling*/
 
-        *{
+        * {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+
         #wrapper {
             display: grid;
             grid-template-columns: 250px 1fr 15%;
@@ -19,7 +20,7 @@
                 "footer footer footer";
             background-image: url(./images/blue_background.png);
             background-repeat: no-repeat;
-            background-size: 1510px;
+            background-size: 100%;
         }
 
         .header {
@@ -144,51 +145,66 @@
             color: white;
         }
 
-        #history1 {
+        .historytext {
             color: white;
-            text-wrap: wrap;
+
         }
 
-        #history2 {
-            color: white;
-            text-wrap: wrap;
-        }
-
-        #history3 {
-            color: white;
-            text-wrap: wrap;
-        }
-
-        #history4 {
-            color: white;
-            text-wrap: wrap;
-        }
-
-        #earlyskate{
+        #earlyskate {
             position: relative;
             padding-left: 10px;
-            top: 50px;
+            top: -25px;
+        }
+
+        #henie {
+            position: relative;
+            top: 175px;
+            left: -100px;
+        }
+
+        #earlyskater {
+            position: relative;
+            top: 250px;
+            left: 10px;
         }
 
         /*Key Terms Styling*/
 
-        #termsheader{
+        #termsheader {
             color: white;
         }
 
-        #termsinstr{
+        #termsinstr {
             color: whitesmoke;
         }
 
-        details{
+        details {
             color: white;
             font-weight: bold;
         }
 
-        summary{
+        summary {
             color: silver;
         }
 
+        #axel {
+            background-color: white;
+            position: relative;
+            left: -75px;
+            top: 15px;
+        }
+
+        #camel {
+            background-color: white;
+            position: relative;
+            left: -75px;
+            top: 50px;
+        }
+
+        #footer {
+            position: relative;
+            left: -500px;
+        }
 
         /*IJS Scoring Styling*/
 
@@ -239,15 +255,15 @@
         }
 
         #fnamebox {
-            width: 200px;
+            width: 225px;
         }
 
         #emailbox {
-            width: 375px;
+            width: 380px;
         }
 
         #addressbox {
-            width: 375px;
+            width: 380px;
         }
 
         #citybox {
@@ -259,7 +275,7 @@
         }
 
         #zipbox {
-            width: 100px;
+            width: 105px;
         }
 
         #submit {
@@ -269,72 +285,140 @@
 
     }
 
+    /*------------------------------------------------------------------------------------------------------*/
+
     @media(max-width:899px) {
 
-        #wrapper {
-            background-image: url(./images/blue_background.png);
-            background-repeat: no-repeat;
-            background-size: 820px;
+
+        /* Universal Styling*/
+
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            #wrapper {
+                background-image: url(./images/blue_background.png);
+                background-repeat: no-repeat;
+                width: 1vw;
+                height: fit-content;
+            }
+
+            #headimg {
+                position: relative;
+                top: 0px;
+                left: 0px;
+                width: 975px;
+            }
+
+            nav ul {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 0;
+                padding-inline: 2.4em;
+                background-color: silver;
+                color: rgb(35, 4, 159);
+                width: 899px;
+            }
+
+            nav a {
+                text-decoration: none;
+            }
+
+            nav li {
+                border: none;
+                width: 18em;
+                list-style-type: none;
+            }
+
+            .footer {
+                width: 975px;
+                position: relative;
+                top: 300px;
+                background-color: black;
+                color: silver;
+            }
+
+            .footer p {
+                text-align: center;
+            }
+
+            #contact {
+                color: silver;
+            }
         }
 
-        nav ul {
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            justify-content: space-around;
-            margin: 0;
-            padding-inline: 2.4em;
-            background-color: silver;
-            color: rgb(35, 4, 159);
-        }
-
-        nav a {
-            text-decoration: none;
-        }
-
-        nav li {
-            border: none;
-            width: 18em;
-            list-style-type: none;
-        }
-
+        /* Homepage Styling*/
         #loginbtn {
             color: silver;
             position: relative;
-            top: -100px;
-            left: 135px;
+            top: -200px;
+            left: 900px;
         }
 
         #words {
             color: white;
             position: relative;
-            left: 275px;
-            font-size: 1.5em;
+            left: 400px;
+            top: 75px;
+            font-size: 3em;
 
         }
 
         #wiki {
             color: white;
             position: relative;
-            left: 250px;
+            left: 450px;
+            top: 25px;
+            text-wrap: nowrap;
         }
 
         #txtlookfor {
             position: relative;
-            left: 125px;
+            left: 330px;
+            top: 25px;
         }
 
         #srchbtn {
             position: relative;
-            left: 125px;
+            top: 5px;
+            left: 705px;
         }
 
-        .footer {
-            position: relative;
-            top: 175px;
-            background-color: black;
+        /*Key Terms Styling*/
+
+        #termsheader {
+            color: white;
+            text-wrap: nowrap;
+        }
+
+        #termsinstr {
+            color: whitesmoke;
+            text-wrap: nowrap;
+        }
+
+        details {
+            text-wrap: nowrap;
+            color: white
+        }
+
+        summary {
+            text-wrap: nowrap;
             color: silver;
-            size: 820px
+        }
+
+        #axel {
+            background-color: white;
+            position: relative;
+            top: -200px;
+            left: 500px;
+        }
+
+        #camel {
+            background-color: white;
+            position: relative;
+            top: -150px;
+            left: 500px;
         }
     }
 }

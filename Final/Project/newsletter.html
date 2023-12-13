@@ -25,9 +25,10 @@
 
 
     <main class="main">
-        
+
         <h1 id="nlheader">Join our Newsletter!</h1>
-        <p id="nlpara">Offered in both print and email versions, our newsletter ensures that you stay up to date on all things figure skating!
+        <p id="nlpara">Offered in both print and email versions, our newsletter ensures that you stay up to date on all
+            things figure skating!
         </p>
 
         <form>
@@ -71,24 +72,27 @@
 
     <footer class="footer">
         <p>Copyright&copy; 2023 SkateCentral Media</p>
-        <p>Last updated 12/7/2023</p>
+        <p>Last updated 12/13/2023</p>
         <p><a id="contact" href="mailto:skatecentral@gmail.com">skatecentral@gmail.com</a></p>
     </footer>
 </body>
 
 <script>
-    var fname= document.getElementsById("fnamebox").value;
-    var lname= document.getElementById("lnamebox").value;
-    var mtype= document.getElementsByName("radiogroup").value;
+    var fname = document.getElementById("fnamebox").value;
+    var lname = document.getElementById("lnamebox").value;
+    var mtype = document.getElementsByName("radiogroup").value;
 
-   function nlSubmit(){
-        if (fnamebox.length >0){
-        alert(`${fname} ${lname} has been added to the mailing list`)
-   } 
-   else {
-    alert("Please fill out the form below before submitting.")
-   }
-}
+    function nlSubmit() {
+        var fname = document.getElementById("fnamebox").value;
+        var lname = document.getElementById("lnamebox").value;
+        if (fname.length > 0) {
+            alert(`${fname} ${lname} has been added to the mailing list`)
+            location.href = "./index.html"
+        }
+        else {
+            alert("Please fill out the form below before submitting.")
+        }
+    }
 </script>
 
 </html>

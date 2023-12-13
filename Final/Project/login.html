@@ -34,17 +34,24 @@
 
     <footer class="footer">
         <p>Copyright&copy; 2023 SkateCentral Media</p>
-        <p>Last updated 12/7/2023</p>
+        <p>Last updated 12/13/2023</p>
         <p><a id="contact" href="mailto:skatecentral@gmail.com">skatecentral@gmail.com</a></p>
     </footer>
 </body>
 
 <script>
 
-    var uname= document.getElementsById("username").value
+    
 
     function login(){
-        alert(`${uname} has been logged in.`)
+        var uname= document.getElementById("username").value
+        if (uname.length > 0) {
+            alert(`${uname} has been logged in.`)
+            location.href = "./index.html"
+        } 
+        else{
+            alert ("Please type in a username and password.")
+        }      
     }
 </script>
 
